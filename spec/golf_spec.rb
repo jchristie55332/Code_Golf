@@ -27,6 +27,15 @@ describe "Golf" do
     end
   end
 
+  describe ".hole2" do
+    it "should take the first letter of a word and return it as a string." do
+      expect(Golf.hole2("hello")).to eql "h"
+    end
+
+    it "should take the first letter of each word in a sentence and return them as a string." do
+      expect(Golf.hole2("hello world it is a glorious day")).to eql "hwiiagd"
+    end
+  end
 
 end
 
